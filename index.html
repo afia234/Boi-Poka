@@ -1,1 +1,48 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boi Poka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--Creating audio-player-->
+<div class="audio-player1">
+    <audio id ="audio-player" controls autoplay muted loop> 
+<source src="original-song-239607.mp3" type="audio/mpeg" >
+    </audio>
+
+    <br>
+    <button onclick="playAudio()">Play</button>
+    <button onclick="pauseAudio()">Pause</button>
+    <button onclick="muteAudio()">Mute</button>
+    <button onclick="unmuteAudio()">Unmute</button>
+</div>
+
+<br>
+
+<!--Creating video-player-->
+<div class="video-player1">
+    <a href="https://mastodonbd.com/" target="_blank">
+        <video id="video-player" controls autoplay muted loop  type="video/mp4"  width="500px";>
+            <source src="login1.mp4">
+        </video>
+    </a>
+        
+    <br>
+
+    
+    <button onclick="playVideo()">Play</button>
+    <button onclick="pauseVideo()">Pause</button>
+    <button onclick="muteVideo()">Mute</button>
+    <button onclick="unmuteVideo()">Unmute</button>
+    <button onclick="restartVideo()">Restart</button>
+   
+</div>
+
+   <script src="script.js"></script>
+</body>
+</html>
